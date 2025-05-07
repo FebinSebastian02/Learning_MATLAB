@@ -14,3 +14,55 @@ load('Commands.mat')
 y = m/2
 
 a = 1 + 2
+
+c = 5
+d = 5
+
+meancd = (c+d)/2
+
+
+
+
+
+%SAVING AND LOADING VARIABLES
+%Saving variables in workspace to a matfile
+save Commands.mat
+
+%Clearing variables in workspace
+clear
+
+%Loading variables back into workspace from a mat file
+load Commands.mat
+
+%Displaying variables of particular variable
+meancd
+
+%Clearing the command window
+clc
+
+%Saving only a variable into a mat file
+save Commands.mat meancd
+
+clear
+
+%Loading only a variable from a mat file
+load Commands.mat meancd
+
+
+
+
+
+%USING BUILT-IN FUNCTIONS
+a = pi %pi = 3.14
+b = pi/2
+c = sqrt(-9)
+d = sin(a)
+
+%Changing format to display more decimal places
+format long
+b
+%Reverting back
+format short
+b
+
+
